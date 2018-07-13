@@ -32,9 +32,7 @@ import Upload from './newComponent'
       onClick() {
         var ComponentClass = Vue.extend(Upload)
         var instance = new ComponentClass({
-            propsData: { type: 'primary' }
         })
-        instance.$slots.default = ['Click me!']
         instance.$mount() // pass nothing
         // console.log(this.$refs)
         this.$refs.container.appendChild(instance.$el)
