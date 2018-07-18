@@ -1,24 +1,18 @@
 <template>
-  <div class="control-section default-sample">
-    <div class="col-lg-8">
-        <div class="control_wrapper">
-            <ejs-uploader id='defaultfileupload' name="UploadFiles" :asyncSettings= "path" :dropArea = "dropElement" ></ejs-uploader>
-        </div>
+    <div class="control_wrappers">
+        <ejs-uploader id='dynamicfileupload' name="UploadFiles" :asyncSettings= "path" :dropArea = "dropElement" ></ejs-uploader>
     </div>
-</div>
 </template>
 
 <style>
 @import '../../node_modules/@syncfusion/ej2-vue-inputs/styles/material.css';
-.default-sample .control_wrapper {
-    max-width: 410px;
-    margin-top: 8%;
-    min-width: 245px;
-    margin-left: 52%;
-}
-#defaultfileupload .e-upload.e-control {
+#dynamicfileupload .e-upload.e-control {
     position: relative;
     margin: 15px 0;
+}
+.control_wrappers {
+    margin-top: 8%;
+    width: 500px;
 }
 </style>
 <script>
@@ -33,7 +27,7 @@ export default Vue.extend({
             saveUrl: 'https://aspnetmvc.syncfusion.com/services/api/uploadbox/Save',
             removeUrl: 'https://aspnetmvc.syncfusion.com/services/api/uploadbox/Remove'
           },
-          dropElement: '.control-section'
+          dropElement: '.control_wrappers'
         }
     }
 });
