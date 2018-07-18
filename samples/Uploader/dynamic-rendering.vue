@@ -1,5 +1,5 @@
 <template>
-  <div class="control-section default-sample">
+  <div class="control-section dynamic-sample">
     <div class="col-lg-8">
         <label> Uploader Dynamic Rendering </label>
         <div class="control_wrapper" ref="container">
@@ -11,16 +11,13 @@
 
 <style>
 @import '../../node_modules/@syncfusion/ej2-vue-inputs/styles/material.css';
-.default-sample .control_wrapper {
+.dynamic-sample .control_wrapper {
     max-width: 410px;
     margin-top: 8%;
     min-width: 245px;
-    margin-left: 52%;
+    margin-left: 400px;
 }
-#defaultfileupload .e-upload.e-control {
-    position: relative;
-    margin: 15px 0;
-}
+
 </style>
 <script>
 import Vue from "vue";
