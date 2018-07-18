@@ -20,6 +20,7 @@
 .default-sample .control_wrapper {
     max-width: 410px;
     min-width: 245px;
+    margin-top: 8%;
     margin-left: 52%;
 }
 #defaultfileupload .e-upload.e-control {
